@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Manrope:wght@500;800&family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+:root {
+  --heading-color: rgba(26, 25, 25, 1);
+  --heading2-color: rgba(126, 144, 254, 1);
+  --text-color: rgba(117, 117, 117, 1);
+  --header-color: rgba(26, 25, 25, 1);
+  --bg-color: #f9f9ff;
+  --active-color: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+}
+
+:where(h1, h2, h3, h4, h5, h6, p) {
+  padding: 0;
+  margin: 0;
+}
+
+/* Common Css */
+h1 {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 100px;
+  color: var(--heading-color);
+}
+
+h1 span {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 100px;
+  color: var(--heading2-color);
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 66px;
+  color: var(--header-color);
+}
+
+h6 {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 27px;
+  color: rgba(71, 71, 71, 1);
+}
+
+p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  color: rgba(117, 117, 117, 1);
+}
+
+a {
+  text-decoration: none;
+  transition: all linear 0.2s;
+}
+
+.bg {
+  padding: 19px 28px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+  color: rgba(255, 255, 255, 1);
+}
+
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.d_flex {
+  display: flex;
+  align-items: center;
+}
+.d_between {
+  justify-content: space-between;
+}
+
+.d_justify {
+  justify-content: center;
+}
+
+.d_grid {
+  display: grid;
+  align-items: center;
+}
+
+.grid_colum1 {
+  grid-template-columns: auto;
+}
+
+.grid_colum2 {
+  grid-template-columns: auto auto;
+}
+
+.grid_colum3 {
+  grid-template-columns: auto auto auto;
+}
+.grid_colum4 {
+  grid-template-columns: 20% 20% 20% 20%;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.section-gap {
+  margin-top: 130px;
+}
+
+a {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 800;
+  color: rgba(117, 117, 117, 1);
+  display: inline-block;
+}
+
+/* NavBar  */
+
+.menubar {
+  padding: 15px 0;
+  background: var(--bg-color);
+}
+
+.menubar-box {
+  grid-template-columns: 30% 50% 20%;
+  padding: 15px 0;
+  position: relative;
+}
+
+.menubar ul li {
+  display: inline-block;
+  padding-left: 42px;
+}
+
+.menubar ul li a.active {
+  color: var(--active-color);
+}
+
+/* banner */
+
+.banner {
+  background: var(--bg-color);
+}
+
+.banner_box {
+  background: var(--bg-color);
+  padding: 15px 20px;
+  gap: 30px;
+}
+.banner_box .img {
+  width: 720px;
+}
+
+.banner_box img {
+  width: 100%;
+}
+
+.bg-2 {
+  margin-top: 20px;
+}
+
+.left span {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 100px;
+  color: var(--heading2-color);
+}
+
+/* Middle */
+.category-heading {
+  flex-direction: column;
+}
+
+.category-box {
+  grid-column-gap: 25px;
+  margin-top: 32px;
+}
+
+.c-box {
+  flex-direction: column;
+  align-items: start;
+  background: linear-gradient(
+    90deg,
+    rgba(126, 144, 254, 0.05) 0%,
+    rgba(152, 115, 255, 0.05) 100%
+  );
+  padding: 40px;
+  border-radius: 8px;
+}
+
+/* Job Feature */
+.Job-heading {
+  flex-direction: column;
+}
+
+.j-b {
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.bt {
+  padding: 9px 19px;
+  border-radius: 4px;
+  border: 1px solid #8689ff;
+  color: #8689ff;
+  margin-right: 10px;
+}
+
+.j-b a {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 22px;
+  color: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+}
+
+.job-box {
+  grid-template-columns: 49% 49%;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  margin-top: 32px;
+  margin-bottom: 235px;
+}
+
+.info {
+  align-items: start;
+  gap: 10px;
+}
+
+/* View All */
+
+.view {
+  margin-left: 598px;
+}
+.bottom {
+  margin-top: -177px;
+}
+/* footer */
+
+.footer {
+  background: rgba(26, 25, 25, 1);
+}
+.lg {
+  font-family: Manrope;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 44px;
+  text-align: left;
+  color: #f9f9ff;
+}
+
+.f-box {
+  flex-direction: column;
+  justify-items: start;
+  text-align: center;
+}
+.f-box h6 {
+  color: #f9f9ff;
+}
+
+.footer-box {
+  display: grid;
+  grid-template-columns: 19% 19% 19% 19% 19%;
+  grid-column-gap: 69px;
+  padding: 130px 250px;
+  align-items: baseline;
+  border-bottom: 1px solid #8689ff;
+  margin-bottom: 50px;
+}
+
+.icons {
+  justify-items: start;
+  align-items: start;
+  gap: 15px;
+}
+
+.copyright {
+  background: rgba(26, 25, 25, 1);
+}
+
+/* First Page End */
+
+/* Start 2nd Page */
+/* Applied Job */
+.banner2 h2 {
+  padding: 140px 510px;
+}
+.banner2 {
+  position: relative;
+}
+
+/* .jd h2 {
+  font-size: 32px;
+} */
+
+.img1 {
+  position: absolute;
+  top: -120px;
+  right: 619px;
+}
+
+.img2 {
+  position: absolute;
+  bottom: 2px;
+  left: 0px;
+}
+
+/* Descriptiom box */
+
+.description-box {
+  grid-template-columns: 60% 30%;
+  align-items: center;
+  padding-top: 130px;
+  grid-column-gap: 24px;
+  position: relative;
+}
+
+.lf span {
+  line-height: 32px;
+  color: rgba(26, 25, 25, 1);
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: left;
+}
+.left p {
+  line-height: 32px;
+}
+
+.heading {
+  padding: 30px;
+  /* margin-top: -182px; */
+  border-bottom: 1px solid #7e90fe;
+}
+
+.des {
+  padding: 0px 30px;
+  margin-top: 24px;
+}
+.des span {
+  line-height: 32px;
+  color: rgba(26, 25, 25, 1);
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: left;
+}
+
+.right {
+  background: linear-gradient(
+    90deg,
+    rgba(126, 144, 254, 0.1) 0%,
+    rgba(152, 115, 255, 0.1) 100%
+  );
+}
+
+.bg3 {
+  position: absolute;
+  padding: 19px 147px;
+  margin-top: 20px;
+  /* right: 339px;
+  top: 975px; */
+  right: 100px;
+  top: 520px;
+}
+
+/* End Applied Page */
+
+.filter {
+  position: relative;
+  margin-top: 130px;
+}
+
+.filter form select {
+  position: absolute;
+  padding: 13px 20px;
+  right: 30px;
+  top: -84px;
+}
+
+.logo-img {
+  background: rgba(244, 244, 244, 1);
+}
+
+.logo-img img {
+  padding: 95px 95px;
+}
+
+.blog-box {
+  grid-template-columns: 22% 40% 30%;
+  grid-column-gap: 35px;
+  margin-top: 32px;
+  align-items: center;
+  padding: 30px;
+}
+
+.b-b {
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.blog-btn a {
+  margin-left: 195px;
+}
